@@ -110,8 +110,8 @@
     where the behaviour of --unroll-order is the same as above.
 
 
-    Documentation
-    =============
+    Methods
+    =======
     
       pairwise provides two methods: distances() and index().
         
