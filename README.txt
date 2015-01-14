@@ -44,7 +44,7 @@
         $ python setup.py build
         $ sudo python setup.py install
     
-      Then in Python,
+   Then in Python,
     
         import pairwise
         from random import random
