@@ -823,12 +823,12 @@ initpairwise(void)
 {
 
     PyObject* m;
+    
+    m = Py_InitModule("pairwise", py_methods);
+    
+    PyModule_AddStringConstant(m, "__version__", PW_VERSION);
+    
+    import_array();
 
-	m = Py_InitModule("pairwise", py_methods);
-	
-	PyModule_AddStringConstant(m, "__version__", PW_VERSION);
-	
-	import_array();
-	
 }
 
