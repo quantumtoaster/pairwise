@@ -812,10 +812,10 @@ py_index
 static PyMethodDef
 py_methods[] = {
 
-	{"distances", (PyCFunction)py_distances, METH_VARARGS | METH_KEYWORDS, PW_DISTANCES_DOCSTR},
-	{"index", (PyCFunction)py_index, METH_VARARGS | METH_KEYWORDS, PW_INDEX_DOCSTR},
-	{NULL, NULL, 0, NULL}
-	
+    {"distances", (PyCFunction)py_distances, METH_VARARGS | METH_KEYWORDS, PW_DISTANCES_DOCSTR},
+    {"index", (PyCFunction)py_index, METH_VARARGS | METH_KEYWORDS, PW_INDEX_DOCSTR},
+    {NULL, NULL, 0, NULL}
+
 };
 
 PyMODINIT_FUNC
