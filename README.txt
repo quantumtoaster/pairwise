@@ -18,18 +18,18 @@
     other versions is unknown.
     
       pairwise carries out the minimum number of calculations required to find
-    the Euclidean distances between all pairs of input points. In my speed
-    tests, running in single-threaded mode, pairwise's distances() performs
-    slightly better than the SciPy equivalent (scipy.spatial.distance.pdist())
-    for large sets of input points (of greater than about 200) and up to an
-    order of magnitude better for small sets (of less than about 200). Running
-    in multi-threaded mode, pairwise's distances() can perform an order of
-    magnitude better than the SciPy equivalent for sets of input points of
-    greater than about 1500. Naturally comparative performance depends strongly
-    on the host platform and, in multi-threaded mode, the chosen ratio of
-    threads-to-processors. (And moreover you would hope that any multi-threaded
-    implementation would beat a comparable single-threaded implementation for
-    speed!)
+    the Euclidean distances between all pairs of input points.
+    
+      In my speed tests, running in single-threaded mode, pairwise's
+    distances() performs slightly better than the SciPy equivalent
+    (scipy.spatial.distance.pdist()) for large sets of input points (of greater
+    than about 200) and up to an order of magnitude better for small sets (of
+    less than about 200). Running in multi-threaded mode, pairwise's
+    distances() can perform significantly better than the SciPy equivalent for
+    sets of input points of greater than about 1000, and an order of magnitude
+    better for sets greater than about 5000. Naturally comparative performance
+    depends strongly on the host platform and, in multi-threaded mode, the
+    chosen ratio of threads-to-processors.
     
       pairwise was written for my own use in structural biology, and also as a
     learning exercise in writing modules for Python in C. To this end, I
